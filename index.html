@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <main class="wrapper">
+        <h1 class="header">Tic-Tac-Toe</h1>
+        <div class="openingScreen">
+            <p class="gameIntro">Welcome to Tic-Tac-Toe Please choose your game:</p>
+            <p class="playerCPU"><button class="playerCPU">One Player game</button></p>
+            <p class="playerPlayer"><button class="playerPlayer">Two Player game</button></p>
+           <div class="namesOverlay">
+            <form class="nameInput">
+                <label for="playerNames">Enter Name</label> <br>
+                <input type="text" name="playerNames" id="playerNames"> <br>
+                <button class="formButton">continue</button>
+            </form>
+           </div>
+        </div>
+        <div class="chooseMarkers">
+            <a href="#" id="crosses" class="crosses">X</a>
+            <a href="#" id="noughts" class="noughts">O</a>
+        </div>
+        <div class="showGameBoard">
+            <div class="overLay">
+                    
+                    <svg width="500" height="20" xmlns="http://www.w3.org/2000/svg">
+
+                        <path d="M 700 250 h550 " fill="orange" stroke="orange" stroke-width="15" stroke-linecap="round" class="path1"/>
+                        <path d="M700 450 h550 " fill="orange" stroke="orange" stroke-width="15" stroke-linecap="round" class="path2"/>
+                        <path d="M700 650 h550 " fill="orange" stroke="orange" stroke-width="15" stroke-linecap="round" class="path3"/>
+                        <path d="M750 250 v450 " fill="yellow" stroke="yellow" stroke-width="15" stroke-linecap="round" class="path4"/>
+                        <path d="M950 250 v450 " fill="yellow" stroke="yellow" stroke-width="15" stroke-linecap="round" class="path5"/>
+                        <path d="M1180 250 v450 " fill="yellow" stroke="yellow" stroke-width="15" stroke-linecap="round" class="path6"/>
+                        <path d="M750 250  l450, 450  " fill="white" stroke="white" stroke-width="15" stroke-linecap="round" class="path7"/>
+                        <path d="M1160 250 l-450, 450 " fill="white" stroke="white" stroke-width="15" stroke-linecap="round" class="path8"/>
+                        
+                      </svg>
+            </div>
+            <div class="whoseMove"></div>
+                <div class="difficulty">
+                    <form class="chooseLevel">
+                        <label for="levels">Skill level</label>
+                        <select name="levels" id="levels" title="drop down menu for skill level">
+                            <option value="easy">easy</option>
+                            <option value="hard">hard</option>
+                        </select>
+                    </form>
+                </div>
+            <div class="playBoard">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+                <div class="box5"></div>
+                <div class="box6"></div>
+                <div class="box7"></div>
+                <div class="box8"></div>
+                <div class="box9"></div>    
+            </div>
+        </div>
+        <div class="winner">
+            <p class="winName">
+                <!-- <p class="winText">congratulations</p> -->
+            </p>
+        </div>
+        <button class="reset" type="button">Reset</button>
+    </main>
+    <!-- <script src="app.js"></script> -->
+    <!-- <script src="app2.js"></script> -->
+    <!-- <script src="app3.js"></script> -->
+    <!-- <script src="app5.js"></script> -->
+    <!-- <script src="app6.js"></script> -->
+    <!-- <script src="app7.js"></script> -->
+    <!-- <script src="app8.js"></script> -->
+    <script type="module" src="app9.js"></script>
+</body>
+</html>
